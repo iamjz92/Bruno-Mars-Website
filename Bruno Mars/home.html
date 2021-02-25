@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <title>HOME | Bruno Mars</title>
+</head>
+
+<body>
+    <!--encabezado-->
+    <header>
+        <a href="home.html" title="Volver a inicio.">
+            <img src="img/logo.png" alt="Logo Bruno Mars." />
+        </a>
+        <div>
+            <p>Escuchar en</p>
+            <a href="https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C" target="_blank">
+                <img src="img/spotify_logo.png" alt="Sitio Spotify" />
+            </a>
+        </div>
+    </header>
+    <!--menu-->
+    <nav>
+        <ul>
+            <li><a href="home.html" class="activo">HOLA</a></li>
+            <li><a href="conocenos.html">CONOCENOS</a></li>
+            <li><a href="#">TIENDA</a></li>
+        </ul>
+    </nav>
+    <!--slider-->
+    <div class="slider">
+        <h1>Hola!</h1>
+        <blockquote>
+            Su música se caracteriza porque tiene una amplia variedad de estilos e influencias y contiene muchos elementos de géneros musicales distintos.
+        </blockquote>
+    </div>
+    <!--SECTION 1-->
+
+    <section id="noticias">
+        <div class="centrar">
+            <h1>Noticias</h1>
+            <article>
+                <img src="img/noticia_1.jpg" alt="Bruno Mars con su novia." />
+                <div>
+                    <h2>Bruno Mars con Jessica Caban?</h2>
+                    <p>Bruno Mars, como saben sus fieles oyentes, es famoso por derramar su corazón en dulces canciones de amor como Nothin ‘On You, Just The Way You Are y Grenade, entre muchas otras. </p>
+                    <p><a href="#">AMPLIAR</a></p>
+                </div>
+            </article>
+
+            <article>
+                <img src="img/noticia_2.jpg" alt="Bruno Mars con su novia." />
+                <div>
+                    <h2>"Estoy escribiendo todos los dias"</h2>
+                    <p>No solo ha demostrado que se toma muy en serio esta pandemia de COVID-19 al hacer una gran donación para combatirla, sino que también se tomó un momento para dejar en claro que viene preparando una sorpresa. </p>
+                    <p><a href="#">AMPLIAR</a></p>
+                </div>
+            </article>
+        </div>
+
+    </section>
+    <!--SECTION 2-->
+
+    <section id="agenda">
+        <div class="centrar">
+            <h1>Agenda</h1>
+            <article>
+                <table>
+                    <caption>Eventos</caption>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Lugar</th>
+                    </tr>
+                    <tr>
+                        <td>5 de Septiembre</td>
+                        <td>10 pm EST</td>
+                        <td>Detroit</td>
+                    </tr>
+                    <tr>
+                        <td>6 de Septiembre</td>
+                        <td>10 pm EST</td>
+                        <td>Atlanta</td>
+                    </tr>
+                    <tr>
+                        <td>3 de Octubre</td>
+                        <td>11 pm EST</td>
+                        <td>Nueva York</td>
+                    </tr>
+                    <tr>
+                        <td>4 de Octubre</td>
+                        <td>11 pm EST</td>
+                        <td>Brooklyn</td>
+                    </tr>
+                    <tr>
+                        <td>2 de Noviembre</td>
+                        <td>10 pm EST</td>
+                        <td>Toronto</td>
+                    </tr>
+                    <tr>
+                        <td>2 de Noviembre</td>
+                        <td>10 pm EST</td>
+                        <td>Boston</td>
+                    </tr>
+                    <tr>
+                        <td>3 de Diciembre</td>
+                        <td>10 pm EST</td>
+                        <td>Miami</td>
+                    </tr>
+                    <tr>
+                        <td>3 de Diciembre</td>
+                        <td>10 pm EST</td>
+                        <td>Orlando</td>
+                    </tr>
+                </table>
+            </article>
+            <article>
+                <!--form-->
+                <form id="tickets" action="" method="GET" autocomplete="on">
+                    <legend>Comprar tickets</legend>
+                    <fieldset>
+                        <div>
+                            <label id="lblnombre" for="nombre">Nombre y apellido (*)</label>
+                            <label for="cantidad">Cantidad (*)</label>
+                        </div>
+                        <div>
+                            <input id="inputNombre" type="text" id="nombre" name="nombre" required title="Ingrese nombre y apellido.">
+                            <input id="inputCantidad" type="number" id="nombre" name="cantidad" required title="Ingrese la cantidad de entradas.">
+                        </div>
+                    </fieldset>
+                    <fieldset id="eventos">
+                        <div>
+                            <label>Evento(*)</label>
+                        </div>
+                        <select>
+                            <optgroup label="Ciudades">
+                                <option value="2">Detroit</option>
+                                <option value="3">Atlanta</option>
+                                <option value="4">Nueva York</option>
+                                <option value="5">Brooklyn</option>
+                                <option value="6">Toronto</option>
+                                <option value="7">Boston</option>
+                                <option value="8">Miami</option>
+                                <option value="9">Orlando</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                    <fieldset id="formaDePago">
+                        <div>
+                            <p>Forma de Pago</p>
+                            <input type="radio" name="pago" checked>
+                            <label for="male">Credito</label>
+                            <input type="radio" name="pago">
+                            <label>Debito</label>
+                        </div>
+                        <div id="submitt">
+                            <input type="submit" value="COMPRAR" id="btnComprar">
+                        </div>
+
+                    </fieldset>
+
+                </form>
+            </article>
+        </div>
+
+    </section>
+    <!--footer-->
+    <footer>
+        <a>Seguinos!</a>
+        <a href="https://www.instagram.com/brunomars/" target="_blank">
+            <img src="img/instagram.png" alt="Ícono Instagram" />
+        </a>
+        <a href="https://twitter.com/BrunoMars" target="_blank">
+            <img src="img/twitter.png" alt="Ícono Twitter" />
+        </a>
+        <a href="https://www.facebook.com/brunomars" target="_blank">
+            <img src="img/facebook.png" alt="Ícono Facebook" />
+        </a>
+    </footer>
+
+</body>
+
+</html>
